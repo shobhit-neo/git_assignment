@@ -1,0 +1,10 @@
+<h1><%= @repo.name.upcase %> Commits</h1>
+<section id="fetch">
+	<input type="text" placeholder="Enter username" id="term" />
+	<button id="search">Search</button>
+</section>
+<div id="chart"></div>
+
+<script type="text/javascript">
+	getCommitsHistory(<%= raw @commits_arr %>);
+</script>

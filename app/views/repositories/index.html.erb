@@ -1,0 +1,12 @@
+<table class="table table-bordered" style="margin-top: 5rem ">
+	<thead>
+		<th>Repo Name</th>
+		<th></th> 
+	</thead>
+	<% @repositories.each do |repo| %>
+		<tr>
+			<td><h5><%= repo.name %></h5></td>
+			<td><%= link_to "Show", repository_path(id: repo.id) %></td>
+		</tr>
+	<% end %>
+</table>
