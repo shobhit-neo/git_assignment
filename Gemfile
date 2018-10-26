@@ -11,10 +11,13 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
+gem 'momentjs-rails'
+gem 'bootstrap-daterangepicker-rails'
 gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'rubocop', '~> 0.59.2', require: false
 end
 
 group :development do
